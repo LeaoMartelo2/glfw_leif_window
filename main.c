@@ -5,12 +5,13 @@
 
 #define WINW 400
 #define WINH 600
+#define DEFAULT_TITTLE "example"
 
 int main() {
 
   glfwInit();
 
-  GLFWwindow *window = glfwCreateWindow(WINW, WINH, "example", NULL, NULL);
+  GLFWwindow *window = glfwCreateWindow(WINW, WINH, DEFAULT_TITTLE, NULL, NULL);
 
   glfwMakeContextCurrent(window);
 
